@@ -8,5 +8,8 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Jost", sans-serif;
+}
+.active{
+  color: #fba504;
 }
