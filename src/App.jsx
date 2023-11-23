@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import NavBar from "./Components/NavBar/NavBar";
 import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 import Service from "./Pages/Service/Service";
@@ -9,6 +8,7 @@ import OurTeam from "./Pages/OurTeam/OurTeam";
 import Testimonial from "./Pages/Testimonial/Testimonial";
 import Page404 from "./Pages/404Page/Page404";
 import Contact from "./Pages/Contact/Contact";
+import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
   return (
