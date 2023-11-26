@@ -32,7 +32,8 @@ body {
   border-radius: 30px;
 
 }
-.mini-mini-title span::after{
+
+.mini-mini-title span::after {
   content: '';
   background: #fba504;
   width: 10%;
@@ -42,7 +43,252 @@ body {
   left: 21%;
   border-radius: 30px;
 }
-.about-us-btn{
+
+.about-us-btn {
   border: 0;
   outline: 0;
+}
+
+
+.mini-title {
+  text-align: center;
+  font-weight: 500;
+  color: #fba504;
+  position: relative;
+}
+
+.mini-title::before {
+  content: '';
+  width: 10%;
+  background-color: #fba504;
+  height: 2px;
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  transform: translateY(-50%);
+}
+
+.mini-title::after {
+  content: '';
+  width: 10%;
+  background-color: #fba504;
+  height: 2px;
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  transform: translateY(-50%);
+
+}
+
+.mini-title span::before {
+  content: '';
+  width: 40%;
+  background: #fba504;
+  height: 2px;
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  left: -60%;
+  transform: translateY(-50%);
+
+}
+
+.mini-title span::after {
+  content: '';
+  width: 40%;
+  background: #fba504;
+  height: 2px;
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  transform: translateY(-50%);
+
+}
+
+.test-one:hover {
+  content: url(../src/Components/Assets/blob-secondary.png);
+}
+
+.arrow-bg:hover {
+  background: #fba504;
+
+}
+
+.arrow-bg:hover .arrow {
+  color: #04000b;
+}
+
+.arrow {
+  transform: translateX(-50%);
+}
+
+.services-box:hover {
+  background: #6222cc;
+  transition: 1s;
+
+}
+
+.services-box:hover .bob-img {
+  content: url(../src/Components/Assets/blob-secondary.png);
+  transition: 1s;
+
+}
+
+.services-box:hover .services-box-icon {
+  color: #04000b;
+  transition: 1s;
+
+}
+
+.services-box:hover .services-box-title {
+  color: #fff;
+  transition: 1s;
+
+}
+
+.services-box:hover .services-box-text {
+  color: #fff;
+  transition: 1s;
+
+}
+
+.services-box:hover .arrow-bg {
+  transform: translateY(-70%);
+  transition: 1s;
+}
+
+.services-box {
+  transition: 1s;
+}
+
+.services-box:hover {
+  transform: translateY(-30px);
+}
+
+.services-boxes {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mini-title2 {
+  text-align: center;
+  font-weight: 500;
+  color: #f6f4f9;
+  position: relative;
+}
+
+.mini-title2::before {
+  content: '';
+  width: 10%;
+  background-color: #f6f4f9;
+  height: 2px;
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  transform: translateY(-50%);
+}
+
+.mini-title2::after {
+  content: '';
+  width: 10%;
+  background-color: #f6f4f9;
+  height: 2px;
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  transform: translateY(-50%);
+
+}
+
+.mini-title2 span::before {
+  content: '';
+  width: 40%;
+  background-color: #f6f4f9;
+  height: 2px;
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  left: -60%;
+  transform: translateY(-50%);
+
+}
+
+.mini-title2 span::after {
+  content: '';
+  width: 40%;
+  background-color: #f6f4f9;
+  height: 2px;
+  border-radius: 70px;
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  transform: translateY(-50%);
+
+}
+
+figure {
+  overflow: hidden;
+}
+.hover01{
+  position: relative;
+}
+
+.hover01 img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+
+}
+
+.project-box:hover img {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.1);
+
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(100, 35, 205,0); /* Initial transparent color */
+  opacity: 0s; /* Initial opacity */
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+.project-box:hover .image-overlay{
+  background-color: rgba(100, 35, 205,0.7); /* Red color with 0.5 opacity on hover */
+  opacity: 1;
+}
+.hidden-icons span{
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.hidden-icons span:hover{
+  color: #04000b;
+  background: #f6f4f9;
+  transition: 1s;
+}
+.project-box:hover .hidden-icons span{
+  opacity: 1;
+  transition: 1s;
+} 
+.project-boxes{
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.active-link{
+  border-bottom: 3px solid #fba504;
+  color: #6222cc;
 }

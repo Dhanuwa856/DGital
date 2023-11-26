@@ -1,17 +1,27 @@
 import MenuLinks from "../MenuLinks/MenuLinks";
-import { Link,NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./NavBar.css";
 import { useState } from "react";
 
 function NavBar() {
   const [visible, setVisible] = useState(false);
+  const [fix, setFix] = useState(false);
+
+  function setFixed() {
+    if (window.scrollY >= 2) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  }
+  window.addEventListener("scroll", setFixed);
   return (
     <>
-      <div className="nav-bar">
-        <div className="nav-logo text-5xl text-light font-bold">
+      <div className={fix ? "nav-bar fixed":"nav-bar"}>
+        <div className={fix ? 'nav-logo color-change':'nav-logo'}>
           <Link to="/">DGital</Link>
         </div>
-        <div className="nav-links flex gap-6 font-medium text-light text-lg">
+        <div className={fix ? "nav-links flex gap-6 font-medium text-light text-lg color-change2" : "nav-links flex gap-6 font-medium text-light text-lg"}>
           <MenuLinks link="/" linkname="Home" />
           <MenuLinks link="/about" linkname="About" />
           <MenuLinks link="/service" linkname="Service" />
@@ -26,7 +36,11 @@ function NavBar() {
             >
               Pages +
             </Link>
-            <div className={visible? 'hidden-content dispaly-none':'hidden-content'}>
+            <div
+              className={
+                visible ? "hidden-content dispaly-none" : "hidden-content"
+              }
+            >
               <NavLink to="/ourteam" className="hover:text-secondary">
                 Our Team
               </NavLink>
@@ -42,7 +56,7 @@ function NavBar() {
           <MenuLinks link="/contact" linkname="Contact" />
         </div>
         <div className="nav-btn">
-          <button className="bg-light font-medium text-lg rounded-3xl py-2 px-6 cursor-pointer">
+          <button className={fix ? "bg-light font-medium text-lg rounded-3xl py-2 px-6 cursor-pointer color-change3":"bg-light font-medium text-lg rounded-3xl py-2 px-6 cursor-pointer"}>
             Get Started
           </button>
         </div>

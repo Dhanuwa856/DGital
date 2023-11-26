@@ -9,6 +9,12 @@
   padding-right: 2.5rem /* 40px */;
   /* position: relative; */
 }
+.nav-logo{
+  font-size: 48px;
+  color: #f6f4f9;
+  font-weight: 700;
+  line-height: 1;
+}
 
 .hidden-content {
   display: none;
@@ -48,10 +54,26 @@
   left:calc(90% + 10px);
   top: -20px;
 }
-.fixed {
-  background: #f6f4f9;
+
+.fixed{
+  background: #fff;
   position: sticky;
-  padding-top: 20px;
-  padding-bottom: 20px;
   top: 0;
+  width: 100%;
+  z-index: 100;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.color-change{
+  color: #6222cc;
+  transition: 1s;
+}
+.color-change2{
+  color: #04000b !important;
+  transition: 1s;
+}
+.color-change3{
+  background: #fba504 !important;
+  transition: 1s;
 }

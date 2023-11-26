@@ -1,0 +1,28 @@
+.number-bg::before {
+  content: url(../src/Components/Assets/blob-top-left.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.number-bg::after {
+  content: url(../src/Components/Assets/blob-top-right.png);
+  position: absolute;
+  left: calc(90% + 10px);
+  top: 0;
+}
+
+.number-bg .number-span::after {
+  content: url(../src/Components/Assets/blob-bottom-left.png);
+  position: absolute;
+  left: 0;
+  top: 70%;
+
+}
+.number-bg .number-span::before {
+  content: url(../src/Components/Assets/blob-bottom-right.png);
+  position: absolute;
+  left: calc(90% + 10px);
+  top: 70%;
+
+}
