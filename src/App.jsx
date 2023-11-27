@@ -9,6 +9,7 @@ import Testimonial from "./Pages/Testimonial/Testimonial";
 import Page404 from "./Pages/404Page/Page404";
 import Contact from "./Pages/Contact/Contact";
 import NavBar from "./Components/NavBar/NavBar";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path="/404" element={<Page404/>} />
       <Route path="/contact" element={<Contact/>} />
     </Routes>
+    <Footer/>
      
     </>
   );

@@ -1,8 +1,16 @@
 import React from 'react'
+import OurProject from '../../Components/OurProject/OurProject'
+import SecondBg from '../../Components/SecondBg/SecondBg'
+import SecondHero from '../../Components/SecondHero/SecondHero'
 
 function Project() {
   return (
-    <div>Project</div>
+   <>
+   <SecondBg>
+    <SecondHero title="Project" link="Project"/>
+   </SecondBg>
+   <OurProject/>
+   </>
   )
 }
 

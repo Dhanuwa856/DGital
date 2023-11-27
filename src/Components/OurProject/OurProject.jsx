@@ -12,9 +12,9 @@ function OurProject() {
         Recently Completed Projects
       </h3>
       <div className="flex justify-center mt-5 gap-4 text-lg font-medium">
-        <ActiveLink filter="all" name="All" />
-        <ActiveLink filter="web" name="Web Design" />
-        <ActiveLink filter="graphic" name="Graphic Design" />
+        <ActiveLink filter="all" name="All" link="/" />
+        <ActiveLink filter="web" name="Web Design" link="/web" />
+        <ActiveLink filter="graphic" name="Graphic Design" link='/graphic' />
       </div>
       <div className="project-boxes w-[85%] mt-9 mx-auto grid gap-y-9 gap-7 ">
         {All_Projects.map((item, i) => {

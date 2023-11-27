@@ -17,7 +17,7 @@ function NavBar() {
   window.addEventListener("scroll", setFixed);
   return (
     <>
-      <div className={fix ? "nav-bar fixed":"nav-bar"}>
+      <div className={fix ? "nav-bar fixed container-2xl":"nav-bar container-2xl"}>
         <div className={fix ? 'nav-logo color-change':'nav-logo'}>
           <Link to="/">DGital</Link>
         </div>
